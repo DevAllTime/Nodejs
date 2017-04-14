@@ -12,4 +12,12 @@ router.get('/',(request,response)=>{
     response.render('home',{title: 'from home'});
 });
 
+router.get('/about',(request,response)=>{
+    response.render('about',{title: 'About Page'});
+});
+
+router.get('/config',(request,response)=>{
+    response.render('config',{title: 'Config Page'});
+});
+
 module.exports = router;
