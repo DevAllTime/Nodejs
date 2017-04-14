@@ -8,8 +8,8 @@ var app = express();
 
 //Middleware
 
-router.get('/index1.html',(request,response,next)=>{
-    response.send("hello world");
+router.get('/',(request,response)=>{
+    response.render('home',{title: 'from home'});
 });
 
 module.exports = router;
